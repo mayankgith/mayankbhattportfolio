@@ -561,9 +561,7 @@ footer .social_links a:hover {
     flex-direction: column;
   }
   #signup_section{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    
   }  
   #signup_fieldset{
     width: 300px;
@@ -573,6 +571,10 @@ footer .social_links a:hover {
   }
   #contact{
     height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
   }
   .hero-content{
     text-align: center;
