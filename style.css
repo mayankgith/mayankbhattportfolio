@@ -551,7 +551,6 @@ footer .social_links a:hover {
 
 @media (max-width: 500px) {
   html {
-    width:100%;
     font-size: 32%;
   }
   .sidebar{
@@ -561,21 +560,20 @@ footer .social_links a:hover {
   #hero .container {
     flex-direction: column;
   }
+  #contact{
+    height: 500px;;
+    flex-direction: column;
+  }
   #signup_section{
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }  
   #signup_fieldset{
     width: 300px;
     height: 300px;
     margin-top: auto;
     margin-bottom: auto;
-  }
-  #contact{
-    height: 500px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
   }
   .hero-content{
     text-align: center;
@@ -590,7 +588,7 @@ footer .social_links a:hover {
     padding: 1rem;
   }
   .card {
-    width: 400px;
+    width:  400px;
     height: 300px;
     display: flex;
     flex-direction: column;
