@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;300;400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
   --lighting-color: #0089b7;
@@ -47,25 +47,52 @@ ul {
 header {
   background: var(--lighting-color);
 }
-
+/* 
 nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+
+nav ul {
+  display: flex;
+  gap: 1rem;
+}
+nav li {
+  font-size: 1.8rem;
+  border-bottom: 0.4rem transparent solid;
+  transition: 0.3s ease-in-out;
+}
+
+nav li:hover {
+  border-bottom: 0.4rem var(--secondary-color) solid;
+  transition: 0.3s ease-in-out;
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: 700;
+} */
+
+
+
+nav{
   font-size: 2rem;
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
 }
-
-nav ul {
+nav ul{
   width: 100%;
   list-style: none;
   display: flex;
   justify-content: flex-end;
   align-items: center;
 }
-
-nav li {
+nav li{
   height: 50px;
 }
-
-nav a {
+nav a{
   height: 100%;
   padding: 0 30px;
   text-decoration: none;
@@ -76,18 +103,15 @@ nav a {
   font-size: 1.8rem;
   transition: 0.3s ease-in-out;
 }
-
-nav a:hover {
+nav a:hover{
   transition: 0.3s ease-in-out;
-  background-color: #FFFFFF;
+  background-color:#FFFFFF;
   color: #003251;
 }
-
-nav li:first-child {
+nav li:first-child{
   margin-right: auto;
 }
-
-.sidebar {
+.sidebar{
   position: fixed;
   top: 0; 
   right: 0;
@@ -102,37 +126,27 @@ nav li:first-child {
   align-items: flex-start;
   justify-content: flex-start;
 }
-
-.sidebar.open {
-  display: flex;
-}
-
-.sidebar li {
+.sidebar li{
   width: 100%;
 }
-
-.sidebar a {
+.sidebar a{
   width: 100%;
 }
-
-.menu-button {
+.menu-button{
   display: none;
 }
+  a svg {
+            fill: white; /* This changes the color of the SVG to white */
+        }
 
-a svg {
-  fill: white;
-}
-
-a svg:hover {
-  fill: black;
-}
-
+        a svg:hover {
+          fill: black; /* This changes the color of the SVG to white */
+      }
 #hero {
   background: var(--darker-color);
   padding: 4rem 0;
   border-bottom: 4px solid var(--lighting-color);
 }
-
 .cssbuttons-io-button {
   display: flex;
   align-items: center;
@@ -167,8 +181,7 @@ a svg:hover {
   justify-content: space-around;
   align-items: center;
 }
-
-.hero_image {
+.hero_image{
   width: 300px;
   height: 300px;
   border: 5px solid #FFFFFF;
@@ -177,7 +190,6 @@ a svg:hover {
   background-size: cover;
   background-position: center;
 }
-
 .hero_content {
   display: grid;
   place-items: center;
@@ -261,26 +273,23 @@ a svg:hover {
   overflow: hidden;
   transition: 0.2s ease-in-out;
 }
-
-.card img {
-  width: 100%;
+.card img{
+  width: 400px;
   height: 220px;
   background-size: cover;
-  background-position: center;
 }
 
 .card:hover {
   transform: scale(1.05);
   transition: 1s ease-in-out;
 }
-
 .card:hover img {
   transform: scale(1.05);
   transition: 0.3s ease-in-out;
   opacity: 0.8;
 }
 
-.card:hover .card_content {
+.card:hover .card_content{
   background: white;
   color: var(--dark-color);
   display: block;
@@ -298,16 +307,13 @@ a svg:hover {
 .card_content h3 {
   text-align: center;
 }
-
-.card_content h4 {
+.card_content h4{
   text-align: center;
 }
-
 .card_content h4 a {
   text-decoration: none;
   color: inherit; /* Inherit color from h4 */
 }
-
 /* Contact Section */
 #contact {
   height: 400px;
@@ -332,13 +338,10 @@ a svg:hover {
   margin-left: 15px;
   margin-bottom: 30px;
 }
-
-legend h3 {
+legend h3{
   font-size: 20px;
 }
-
-.top_contact,
-.bottom_contact {
+.top_contact, .bottom_contact {
   max-width: 800px;
   display: grid;
   align-items: center;
@@ -361,7 +364,6 @@ legend h3 {
   font-size: 3rem;
   font-weight: bold;
 }
-
 /* Sign-up Page Coding */
 #signup_section {
   width: 700px;
@@ -370,6 +372,7 @@ legend h3 {
   padding: 0;
   margin: 0;
 }
+
 
 #signup_fieldset {
   width: 350px;
@@ -383,9 +386,7 @@ legend h3 {
   padding: 25px;
 }
 
-#username1,
-#email,
-#number {
+#username1, #email, #number {
   width: 100%;
   height: 30px;
   background-color: inherit;
@@ -417,18 +418,13 @@ legend h3 {
   font-size: 18px;
 }
 
-#login_button:disabled {
-  background-color: #ccc;
-  cursor: not-allowed;
-}
 
-/* Certification Section */
+/* certification Section */
 #certification {
   background: var(--darker-color);
   border-bottom: 4px solid var(--lighting-color);
   padding: 2rem 0;
 }
-
 #certification h2 {
   font-size: 6rem;
   text-align: center;
@@ -447,7 +443,7 @@ legend h3 {
   place-items: center;
 }
 
-.card_con {
+.card_con{
   width: 700px;
   display: flex;
   flex-direction: column;
@@ -458,14 +454,12 @@ legend h3 {
   align-items: center;
   justify-content: center;
 }
-
-.card_con img {
+.card_con img{
   width: 700px;
   height: 550px;
   background-size: cover;
 }
-
-.certificate_name {
+.certificate_name{
   text-align: center;
   margin-top: 20px;
   text-decoration: underline;
@@ -519,6 +513,11 @@ footer .social_links a:hover {
   transform: scale(1.2);
 }
 
+#login_button:disabled{
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
 /* Media Query */
 @media (max-width: 786px) {
   html {
@@ -527,10 +526,10 @@ footer .social_links a:hover {
   #hero .container {
     flex-direction: column;
   }
-  .hideOnMobile {
+  .hideOnMobile{
     display: none;
   }
-  .menu-button {
+  .menu-button{
     display: block;
   }
   .hero_image {
@@ -556,31 +555,32 @@ footer .social_links a:hover {
   html {
     font-size: 32%;
   }
-  .sidebar {
+  .sidebar{
     width: 100%;
     z-index: 1;
   }
   #hero .container {
     flex-direction: column;
   }
-  #contact {
+  #contact{
     height: 500px;
     flex-direction: column;
   }
-  #signup_section {
+  #signup_section{
     display: flex;
     justify-content: center;
     align-items: center;
   }  
-  #signup_fieldset {
+  #signup_fieldset{
     width: 300px;
     height: 300px;
     margin-top: auto;
     margin-bottom: auto;
   }
-  .hero-content {
+  .hero-content{
     text-align: center;
   }
+  
   .hero_image {
     display: grid;
     place-items: center;
@@ -589,13 +589,14 @@ footer .social_links a:hover {
     height: auto;
     padding: 1rem;
   }
-  .project_container .grid_item {
+  .project_container .grid_item{
     display: flex;
     justify-content: center;
     align-items: center;
   }
+
   .card {
-    width: 300px;
+    width:  300px;
     height: 300px;
     display: flex;
     flex-direction: column;
@@ -603,9 +604,10 @@ footer .social_links a:hover {
     background-position: center; /* Center the background image */
     border-radius: 0.5rem;
     transition: 0.2s ease-in-out;
+    
   }
-  .card img {
-    width: 300px;
+  .card img{
+    width:  300px;
     height: 240px;
     display: flex;
     flex-direction: column;
@@ -617,7 +619,7 @@ footer .social_links a:hover {
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     gap: 0; /* Remove gap between cards */
   }
-  .card_con {
+  .card_con{
     width: 320px;
     height: 300px;
     display: flex;
@@ -631,9 +633,10 @@ footer .social_links a:hover {
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     gap: 2rem;
   }
-  .card_con img {
-    width: 100%;
-    height: auto;
+  .card_con img{
+    width: 300px;
+    height: 300px;
+    background-size: cover;
   }
   footer .container {
     padding: 1rem;
