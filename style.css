@@ -551,6 +551,7 @@ footer .social_links a:hover {
 
 @media (max-width: 500px) {
   html {
+    width:100%;
     font-size: 32%;
   }
   .sidebar{
