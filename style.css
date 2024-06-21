@@ -555,6 +555,11 @@ footer .social_links a:hover {
     justify-content: center;
     align-items: center;
   }
+  #signup_section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   .hero_image {
     display: grid;
     place-items: center;
