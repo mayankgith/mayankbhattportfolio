@@ -555,7 +555,7 @@ footer .social_links a:hover {
     justify-content: center;
     align-items: center;
   }
-  #signup_section{
+    #signup_fieldset{
     display: flex;
     justify-content: center;
     align-items: center;
