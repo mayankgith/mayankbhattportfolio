@@ -274,7 +274,7 @@ nav li:first-child{
   transition: 0.2s ease-in-out;
 }
 .card img{
-  width: 400px;
+  width: 420px;
   height: 220px;
   background-size: cover;
 }
