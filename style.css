@@ -1,9 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
-  --lighting-color: #0089b7;
-  --dark-color: #003d62;
-  --darker-color: #003251;
+  --overlay-z-index: -2;
+  --lighting-color: #fff;
+  --overlay-gradient: radial-gradient(#ffffff33 1px, #00091d 1px);
+  --overlay-gradient-size: 20px 20px;
+  --dark-color: #000000;
+  --darker-color: #000000;
   --secondary-color: #fff700; 
 }
 
@@ -45,7 +48,7 @@ ul {
 }
 
 header {
-  background: var(--lighting-color);
+  background: linear-gradient(to right, #11998e, #38ef7d);
 }
 /* 
 nav {
@@ -144,6 +147,8 @@ nav li:first-child{
       }
 #hero {
   background: var(--darker-color);
+   background-image: var(--overlay-gradient); 
+    background-size: var(--overlay-gradient-size);
   padding: 4rem 0;
   border-bottom: 4px solid var(--lighting-color);
 }
@@ -155,10 +160,9 @@ nav li:first-child{
   font-size: 17px;
   padding: 0.8em 1.5em 0.8em 1.2em;
   color: white;
-  background: #0085B1;
-  background: linear-gradient(0deg, rgba(77,54,208,1) 0%, rgba(132,116,254,1) 100%);
+  background: linear-gradient(0deg, rgba(17, 153, 142, 1) 0%, rgba(56, 239, 125, 1) 100%);
   border: none;
-  box-shadow: 0 0.7em 1.5em -0.5em #4d36d0be;
+  box-shadow: 0 0.7em 1.5em -0.5em  rgba(17, 153, 142, 1) ;
   letter-spacing: 0.05em;
   border-radius: 20em;
   margin-top: 10px;
@@ -169,11 +173,11 @@ nav li:first-child{
 }
 
 .cssbuttons-io-button:hover {
-  box-shadow: 0 0.5em 1.5em -0.5em #4d36d0be;
+  box-shadow: 0 0.5em 1.5em -0.5em  rgba(56, 239, 125, 1);
 }
 
 .cssbuttons-io-button:active {
-  box-shadow: 0 0.3em 1em -0.5em #4d36d0be;
+  box-shadow: 0 0.3em 1em -0.5em  rgba(56, 239, 125, 1);
 }
 
 #hero .container {
@@ -243,6 +247,8 @@ nav li:first-child{
 /* Project Section */
 #project {
   background: var(--darker-color);
+  background-image: var(--overlay-gradient); 
+  background-size: var(--overlay-gradient-size);
   padding: 4rem 0;
 }
 
@@ -319,6 +325,8 @@ nav li:first-child{
   height: 400px;
   width: 100%;
   background: var(--dark-color);
+  background-image: var(--overlay-gradient); 
+  background-size: var(--overlay-gradient-size);
   padding-top: 30px;
 }
 
@@ -395,10 +403,14 @@ legend h3{
   border-style: solid;
   border-color: white;
   margin-top: 10px;
+  outline: none;
   color: white;
   font-size: 17px;
 }
-
+input::placeholder{
+  color: white;
+  opacity: 1;
+}
 #login_button {
   width: 130px;
   height: 40px;
@@ -417,12 +429,17 @@ legend h3{
   font-family: "Noto Sans", sans-serif;
   font-size: 18px;
 }
-
+#login_button:hover{
+  background-color: #7361F0;
+  border: none;
+}
 
 /* certification Section */
 #certification {
   background: var(--darker-color);
   border-bottom: 4px solid var(--lighting-color);
+  background-image: var(--overlay-gradient); 
+  background-size: var(--overlay-gradient-size);
   padding: 2rem 0;
 }
 #certification h2 {
