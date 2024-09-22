@@ -31,7 +31,7 @@
 
 ?> -->
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" oncontextmenu="return false;">
 <head>
     <meta charset="UTF-8">
     <meta name="keywords" content="web developer, front-end developer, back-end developer, full-stack developer, web development portfolio, JavaScript, HTML, CSS, PHP, mySql, coding projects, software development">
@@ -347,6 +347,11 @@
     function hideSidebar(){
       const sidebar = document.querySelector('.sidebar')
       sidebar.style.display = 'none'
+    }
+       document.onkeydown = function(a){
+      if(a.ctrlKey && a.shiftKey && a.keyCode == 73){
+        return false;
+      }
     }
     function SendMail(){
     var params = {
